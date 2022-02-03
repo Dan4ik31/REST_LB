@@ -4,9 +4,9 @@ from src.Book import Book
 class Subject:
     id = 0
     name = ''
-    song = []
+    book = []
     def __init__(self, id):
         self.id = id
 
-    def add_song(self, song: Book):
-        self.song.insert(book)
+    def add_book(self, song: Book):
+        self.book.insert(book)
