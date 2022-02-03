@@ -7,4 +7,4 @@ class Book:
         self.name = name
 
     def set_name(self, name):
-        self.name = 
+        self.name = name
