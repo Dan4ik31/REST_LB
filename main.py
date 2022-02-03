@@ -2,7 +2,7 @@ import json
 
 from flask import Flask, request
 
-from song import Book
+from book import Book
 from src.subject import Subject
 
 api=Flask(__name__)
@@ -78,7 +78,7 @@ def update_book():
             break
 
     if subject_exist is not None:
-        for book in subject_exist.song:
+        for book in subject_exist.book:
             if book.name == book_name:
                 book.name = new_book_name
                 break
@@ -94,7 +94,7 @@ def delete_book():
             break
 
     if subject_exist is not None:
-        for book in subject_exist.song:
+        for book in subject_exist.book:
             if book.name == book_name:
                 subject_exist.book.remove(book)
                 break
