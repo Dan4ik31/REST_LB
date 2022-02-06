@@ -1,4 +1,4 @@
-from src.Book import Book
+from src.book import Book
 
 
 class Subject:
