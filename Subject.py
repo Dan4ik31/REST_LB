@@ -8,5 +8,5 @@ class Subject:
     def __init__(self, id):
         self.id = id
 
-    def add_book(self, song: Book):
+    def add_book(self, book: Book):
         self.book.insert(book)
